@@ -15,7 +15,7 @@ recognition.addEventListener('result', onSpeak);
 
 function onSpeak(e) {
     chute = e.results[0][0].transcript;
-    if (chute === 'fim do jogo') {
+    if (chute === 'fim do jogo' || chute === 'Fim do jogo') {
         body.classList.add('red');
         body.innerHTML = `
             <h1>GAME OVER</H1>
