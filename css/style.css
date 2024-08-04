@@ -23,6 +23,10 @@ h1 {
     font-size: 4em;
 }
 
+h2 {
+    font-size: 4em;
+}
+
 h3 {
     font-size: 2em;
     margin-top: 20px;
@@ -39,4 +43,21 @@ h3 {
     font-size: 4em;
     padding: 10px;
     margin: 20px;
+}
+
+.btn-jogar {
+    background: #FF8343;
+    padding: 8px 15px;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-jogar:hover {
+    padding: 10px 20px;
+    font-size: 1.8em;
+    cursor: pointer;
 }

@@ -15,6 +15,7 @@ recognition.addEventListener('result', onSpeak);
 function onSpeak(e) {
     chute = e.results[0][0].transcript;
     exibirChuteNaTela(chute);
+    validarChute(chute);
 }
 
 function exibirChuteNaTela(chuteTreino) {
@@ -26,3 +27,5 @@ function exibirChuteNaTela(chuteTreino) {
     divChute.append(div);
     divChute.append(span);
 }
+
+recognition.addEventListener('end', () => recognition.start())
