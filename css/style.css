@@ -19,6 +19,10 @@ body {
     font-family: var(--font-family);
 }
 
+.red {
+    background-color: red;
+}
+
 h1 {
     font-size: 4em;
 }

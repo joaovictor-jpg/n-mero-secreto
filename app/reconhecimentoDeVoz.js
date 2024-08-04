@@ -1,4 +1,5 @@
 const divChute = document.querySelector('#chute');
+const body = document.querySelector('body');
 
 let chute;
 
@@ -14,6 +15,13 @@ recognition.addEventListener('result', onSpeak);
 
 function onSpeak(e) {
     chute = e.results[0][0].transcript;
+    if (chute === 'fim do jogo') {
+        body.classList.add('red');
+        body.innerHTML = `
+            <h1>GAME OVER</H1>
+            <button id='jogar-novamente' class='btn-jogar'>jogar Novamente</button>
+        `;
+    }
     exibirChuteNaTela(chute);
     validarChute(chute);
 }
