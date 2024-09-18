@@ -19,11 +19,11 @@ function validarChute(chute) {
         `;
     } else if (numero > numeroSecreto) {
         const div = document.createElement('div');
-        div.innerHTML = `O número ${chute} é meior que número secreto <i class="fa-solid fa-down-long"></i>`;
+        div.innerHTML = `O número ${chute} é maior que número secreto <i class="fa-solid fa-down-long"></i>`;
         document.body.append(div);
     } else {
         const div = document.createElement('div');
-        div.innerHTML = `O número ${chute} é meno que p número secreto <i class="fa-solid fa-up-long"></i>`;
+        div.innerHTML = `O número ${chute} é menor que p número secreto <i class="fa-solid fa-up-long"></i>`;
         document.body.append(div);
     }
 }
